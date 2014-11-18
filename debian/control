@@ -1,0 +1,12 @@
+Source: ros-indigo-map-store
+Section: misc
+Priority: extra
+Maintainer: Dave Hershberger <hersh@willowgarage.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-nav-msgs, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-rostest, ros-indigo-warehouse-ros
+Homepage: http://ros.org/wiki/map_store
+Standards-Version: 3.9.2
+
+Package: ros-indigo-map-store
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-message-runtime, ros-indigo-nav-msgs, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-rospy, ros-indigo-warehouse-ros
+Description: Storage manager for OccupancyGrid maps. Supports naming the most recent map, getting a list of map names, and publishing a specific map.
